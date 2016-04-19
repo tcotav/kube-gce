@@ -56,4 +56,4 @@ done
 echo " "
 echo "Cluster machines setup has finished !!!"
 echo "Run next script get_k8s_fleet_etcd.sh ... "
-pause 'Press [Enter] key to continue ...'
+#pause 'Press [Enter] key to continue ...'

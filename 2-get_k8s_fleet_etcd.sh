@@ -16,6 +16,12 @@ master_ip=$(gcloud compute instances list --project=$project | grep -v grep | gr
 # path to the folder where we store our binary files
 export PATH=${HOME}/k8s-bin:$PATH
 
+if [ -f ${HOME}/k8s-bin/fleetctl ]; then
+  echo "files already downloaded"
+  exit 0
+fi
+
+
 # get latest k8s version
 function get_latest_version_number {
 local -r latest_url="https://storage.googleapis.com/kubernetes-release/release/latest.txt"

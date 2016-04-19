@@ -47,4 +47,4 @@ fleetctl list-units
 
 echo " "
 echo "Kubernetes Cluster setup has finished !!!"
-pause 'Press [Enter] key to continue...'
+#pause 'Press [Enter] key to continue...'
